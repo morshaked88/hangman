@@ -43,7 +43,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  display: flex;
 }
 
 .container header {
@@ -225,6 +224,41 @@ body {
   }
   .container .game-over .btn-section .btn:hover {
     background-color: #A8D0E6;
+  }
+}
+
+@media (min-width: 480px) and (orientation: landscape) {
+  .container header {
+    margin-top: 10px;
+  }
+  .container header .title {
+    font-size: 45px;
+  }
+  .container .all-elements {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 3%;
+  }
+  .container .all-elements .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .all-elements .main .secret-word {
+    padding: 0;
+  }
+  .container .all-elements .main .secret-word .letter {
+    height: 35px;
+    width: 35px;
+  }
+  .container .all-elements .keyboard {
+    margin-top: 0;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
